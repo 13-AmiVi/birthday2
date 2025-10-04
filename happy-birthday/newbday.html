@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Meri Pyari Behna! 🎂</title>
+    <link rel="stylesheet" href="newbday.css">
+</head>
+<body>
+    <!-- Background Animation Elements -->
+    <div class="background-animations">
+        <div class="hearts-container"></div>
+        <div class="confetti-container"></div>
+        <div class="cakes-container"></div>
+        <div class="music-notes-container"></div>
+    </div>
+
+    <!-- Music Controls -->
+    <div class="music-controls">
+        <div class="music-player">
+            <audio id="birthdayAudio" preload="auto">
+                <source src="audio/happy-birthday.wav" type="audio/wav">
+                Your browser does not support the audio element.
+            </audio>
+            
+            <button class="music-toggle-btn" id="musicToggle" title="Play Birthday Song">
+                <span class="music-icon">🎵</span>
+                <span class="music-text">Play Birthday Song</span>
+            </button>
+            
+            <div class="volume-control">
+                <button class="volume-btn" id="volumeBtn" title="Volume Control">🔊</button>
+                <input type="range" id="volumeSlider" class="volume-slider" min="0" max="100" value="70">
+            </div>
+        </div>
+        
+        <div class="music-status" id="musicStatus">
+            <span class="status-text">🎧 Turn on sound for full experience!</span>
+        </div>
+    </div>
+
+    <!-- Floating Music Indicator -->
+    <div class="floating-music-indicator" id="floatingIndicator">
+        <div class="pulsing-note">🎵</div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <div class="birthday-title">
+                    <h1 class="main-title animate-fade-in">Happy Birthday Srishti ♥</h1>
+                    <h2 class="sub-title animate-slide-up">Meri Pyari Behna! 💕</h2>
+                </div>
+                <div class="birthday-emoji animate-bounce">🎂🎉🎈</div>
+                <p class="intro-message animate-fade-in-delayed">
+                    Today is your special day, and I want to make it magical! 
+                    <br>You mean the world to me, my dear sister. ✨
+                    <br>Happy Birthday, Srishti ❤️
+No words can ever truly explain how much you mean to me. You’re not just my sister, you’re my best friend, my constant support, and my biggest blessing. I love you more than anything in this world, and I miss you so much every single day. Distance may keep us apart, but nothing can ever lessen the bond we share. You make my life brighter just by being in it.
+
+On your special day, I just want you to know how grateful I am to have you as my sister. May all your dreams come true, and may happiness always stay with you. 💕
+
+I love you and miss you endlessly, behna. Always stay the same. My world, My happiness.
+                </p>
+                
+                <!-- Prominent Music Button -->
+                <div class="hero-music-btn-container">
+                    <button class="hero-music-btn" id="heroMusicBtn">
+                        <span class="hero-music-icon">🎵</span>
+                        <span class="hero-music-text">Play Birthday Song</span>
+                        <span class="hero-music-icon">🎵</span>
+                    </button>
+                    <p class="music-subtitle">Click to start the musical celebration! 🎶</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Surprise Message Section -->
+        <section class="surprise-section">
+            <div class="surprise-container">
+                <button class="surprise-btn" id="surpriseBtn">
+                    <span class="btn-text">🎁 Click to Reveal Surprise 🎁</span>
+                    <div class="btn-sparkle"></div>
+                </button>
+                
+                <div class="surprise-message hidden" id="surpriseMessage">
+                    <div class="message-card">
+                        <div class="message-header">💝 A Special Message For You 💝</div>
+                        <div class="message-content">
+                            <p class="personal-message">
+                                I LOVE YOU SO MUCH MERI PYARI BEHNA, I'LL NEVER LEAVE YOU AT ANY COST NO MATTER WHAT IM ALWAYS THERE FOR YOU ON YOUR SIDE. MISS YOU SO MUCH :(
+                            </p>
+                        </div>
+                        <div class="message-footer">❤️ From Your Loving Brother ❤️</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Shayari Section -->
+        <section class="shayari-section">
+            <div class="section-header">
+                <h3 class="section-title">भाई-बहन का प्यार 💕</h3>
+                <div class="title-underline"></div>
+            </div>
+            
+            <div class="shayari-container">
+                <div class="shayari-card animate-slide-in-left">
+                    <div class="shayari-content">
+                        <p class="hindi-text">बहन की हँसी से सजे हैं घर के आँगन,<br>भाई की परछाई में बसी है सारी जान।</p>
+                        <p class="english-text">Behan ki hansi se saje hain ghar ke aangan,<br>Bhai ki parchai mein basi hai saari jaan.</p>
+                    </div>
+                </div>
+
+                <div class="shayari-card animate-slide-in-right">
+                    <div class="shayari-content">
+                        <p class="hindi-text">भाई-बहन का रिश्ता सबसे निराला होता है,<br>ये रिश्ता सभी रिश्तों में सबसे प्यारा होता है।</p>
+                        <p class="english-text">Bhai-behan ka rishta sabse nirala hota hai,<br>Ye rishta sabhi rishton mein sabse pyara hota hai.</p>
+                    </div>
+                </div>
+
+                <div class="shayari-card animate-slide-in-left">
+                    <div class="shayari-content">
+                        <p class="hindi-text">दूर रहकर भी रिश्तों को ख़ास बनाया जाता है,<br>भाई-बहन का रिश्ता जिंदगी भर निभाया जाता है।</p>
+                        <p class="english-text">Door rehkar bhi rishton ko khaas banaya jata hai,<br>Bhai-behan ka rishta zindagi bhar nibhaya jata hai.</p>
+                    </div>
+                </div>
+
+                <div class="shayari-card animate-slide-in-right">
+                    <div class="shayari-content">
+                        <p class="hindi-text">भाई है रक्षक, बहन है गीत,<br>दोनों का प्यार है जीत पे जीत।</p>
+                        <p class="english-text">Bhai hai rakshak, behen hai geet,<br>Dono ka pyar hai jeet pe jeet.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer-section">
+            <div class="footer-content">
+                <p class="footer-message">Made with ❤️ by your loving brother
+                    <br> ♥AmiVi♥
+                </p>
+                <div class="footer-hearts">💕 💖 💕</div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Audio Not Available Message -->
+    <div class="audio-error-message hidden" id="audioError">
+        <div class="error-content">
+            <p>🎵 Happy Birthday song not available</p>
+            <p>Please add "happy-birthday.mp3" file to enable music</p>
+        </div>
+    </div>
+
+    <script src="newbday.js"></script>
+</body>
+</html>
